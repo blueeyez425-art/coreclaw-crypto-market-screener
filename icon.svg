@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7931a"/>
+      <stop offset="100%" stop-color="#e2761b"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <!-- Stylized chart/crypto bars -->
+  <rect x="28" y="72" width="10" height="28" rx="3" fill="#0f9"/>
+  <rect x="44" y="52" width="10" height="48" rx="3" fill="#0cf"/>
+  <rect x="60" y="36" width="10" height="64" rx="3" fill="#f7931a"/>
+  <rect x="76" y="56" width="10" height="44" rx="3" fill="#0cf"/>
+  <rect x="92" y="68" width="10" height="32" rx="3" fill="#0f9"/>
+  <!-- Trend line -->
+  <polyline points="33,68 49,48 65,32 81,52 97,64" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+</svg>
