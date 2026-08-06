@@ -1,0 +1,49 @@
+{
+  "description": "Crypto Market Screener — fetches live crypto prices, market caps, volume, supply, and performance data from CoinGecko. Enter coin names/symbols (e.g. bitcoin, eth, sol) or set 'Include Top N' to pull the top coins by market cap. No API key required.",
+  "b": "coins",
+  "properties": [
+    {
+      "title": "Coin Names (stringList)",
+      "name": "coins",
+      "type": "array",
+      "editor": "stringList",
+      "description": "Enter coin IDs, symbols, or names — one per line. Examples: bitcoin, eth, solana, dogecoin, pepe. Leave empty to use only Include Top N.",
+      "default": [
+        { "string": "bitcoin" },
+        { "string": "ethereum" },
+        { "string": "solana" }
+      ]
+    },
+    {
+      "title": "Include Top N",
+      "name": "include_top",
+      "type": "integer",
+      "editor": "number",
+      "description": "Automatically include the top N coins by market cap. Set to 0 to use only the coins listed above. Max 250.",
+      "default": 10
+    },
+    {
+      "title": "Currency (select)",
+      "name": "vs_currency",
+      "type": "string",
+      "editor": "select",
+      "description": "Quote currency for prices and market data.",
+      "options": [
+        { "label": "USD", "value": "usd" },
+        { "label": "EUR", "value": "eur" },
+        { "label": "GBP", "value": "gbp" },
+        { "label": "BTC", "value": "btc" },
+        { "label": "ETH", "value": "eth" }
+      ],
+      "default": "usd"
+    },
+    {
+      "title": "Max Results (number)",
+      "name": "max_results",
+      "type": "integer",
+      "editor": "number",
+      "description": "Maximum number of coins to return. CoinGecko free tier returns up to 250 per call.",
+      "default": 50
+    }
+  ]
+}
